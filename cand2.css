@@ -1,0 +1,566 @@
+body {
+    margin: 0;
+
+    color: rgb(19, 179, 179);
+    font-size: 15px;
+    line-height: 1.6;
+
+    background-color: rgb(180, 131, 91);/*я добавил фон вместо фото*/
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+hr {/*полоска между иконками*/
+    display: block;
+    width: 90%;
+    height: 2px;
+    margin: 40px 0;/*отступы верх и низ от черты*/
+    border: 0;
+    background-color: rgb(139, 27, 27);
+
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.intro {
+    display: flex; /*сделал текст посередине страницы. три эти строки*/
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: 100vh;
+    background: 
+    url(images/1.jpg.jpg) center no-repeat;
+    background-size: cover;
+    /*background-attachment: scroll;*/ /*межстрочный интервал*/
+}
+
+.intro_inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center; /*чтобы все было по центру*/
+}
+
+.intro_title {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center; 
+    /*line-height: 1.1;*/
+}
+
+.intro_title:after { /*делаем полоску под текстом*/
+    content: "";
+    display: block;
+    width: 120px;
+    height: 4px;
+    margin: 20px auto 0;
+
+    background-color: turquoise;
+}
+
+.intro_suptitle {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    /*background-color: rgb(178, 206, 55);*/
+
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.header_logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(13, 224, 108);
+}
+
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative; /*для новой черты */
+    
+    color: rgb(224, 233, 222);
+    text-decoration: none;
+    transition: color 0.3s lianer;
+}
+
+/*делаем новую черту под ссылкой при наведении*/
+.nav_link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #fce38a;
+    opacity: 0; /*display:non;*/
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity .3s linear;
+
+}
+
+.nav_link:hover {
+    color: #fce38a;
+  
+}
+
+/*делаем новую черту под ссылкой при наведении*/
+.nav_link:hover:after,
+.nav_link.active:after {
+    opacity: 1;/*display: block;*/
+}
+.nav_link.active {
+    color: #fce38a;  
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+
+    border: 3px solid #fff;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+   /*display: flex;
+    justify-content: center;
+    margin-left: 40%;
+    margin-right: 40%; я так передвигал кнопку Море в центр */
+
+    transition: background .5s linear, color .5s linear;
+}
+.btn:hover { /*делаем кнопка море меняется при наведении*/
+    background-color: #fff;
+    color: #333;
+}
+
+h3 { /*это я добавил*/
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+    font-size: 25px;
+}
+
+.slider {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    /*display: flex;
+    justify-content: space-between;
+    margin-top: 30px; /*отступ полосок и 01 02 0304 от МОре */
+}
+
+.slider_inner {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.slider_item {
+    width: 24%;
+    padding: 20px 0;
+    position: relative; /*написал спец для красной полоски 01*/
+
+    border-top: 3px solid #fff;/*черта над 01 02 03 04*/
+    opacity: .4; /*прозрачность слов у 01 02 03 04*/
+
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+}
+.slider_item.active { /*первая полоска 01 без прозрачности*/
+    opacity: 1;
+}
+.slider_item.active::before {/* красная полоска на 01*/
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    position: absolute;
+    top: 0;/*если сделать top -3px то красная полоска чуть подним*/
+    left: 0;
+    z-index: 1;
+    background-color: red;
+
+
+}
+.slider_num {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.section {
+    padding: 80px 0; /*поля от верх-низ страницы*/
+}
+
+.section--devices {
+    margin-bottom: 40px;
+    padding-bottom: 0;
+
+    background: url(images/devis.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.section--gray {
+    background-color: #f8f8f8;
+}
+
+.section_header {
+    width: 100%; /*100%площади страницыэкрана. еслияправильно понял*/
+    max-width: 950px;
+    margin:0 auto 50px; /*отступ вокруг элемента. от низа текста 40*/
+    text-align: center;
+}
+
+.section_suptitle {
+    font-family: cursive;
+    font-size: 18px;
+    color: #333;
+}
+
+.section_title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+.section_title::after { /*красная полоска*/
+    content: "";
+    display: block;
+    width: 60px; /*ширина*/
+    height: 3px; /*толщина-высота полоски*/
+    margin: 30px auto; /*отступ полоски верх-низ. и пр-лев */
+    background-color: red;
+}
+
+.section_tex {
+    font-size: 15px;
+    color: black;
+}
+
+.about {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.about_item {
+    width: 284px; /*ширина фона под картинками*/
+    position: relative;/*чтобы позиционировать текст(super team поверх картики относительно его item*/
+    background-color: #95e1d3; /*фон когда смещаются картинки*/
+}
+.about_item:hover .about_img {
+    transform: translate3d(-10px, -10px, 0);/*трансформация при наведении курсора*/
+}
+
+
+.about_item:hover .about_img img {
+    opacity: .2; /*прозрачность при наведении мыши*/
+}
+
+.about_item:hover .about_text {
+    opacity: 1; /*прозрачность словsupteam при наведении мыши.повятся слова*/
+}
+
+.about_img { /* */
+    background: linear-gradient(to bottom, #f38181, #fce38a);/*сверху вниз делаем градиент*/
+    transition: transform .1s linear; /*плавная перемещение картинок с градиент фоном*/
+}
+.about_img img {
+    display: block; /*убираем прячем фон под картинки*/
+    transition: opacity .1s linear; /*фон под картинками*/
+}
+
+.about_text {
+    width: 100%;/*ставит текст по центру картинки item*/
+
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    opacity: 0;/*скрыть текст*/
+
+    position: absolute;/*super team абсолютно позиц к item.не изменяет картинку в item*/
+    top: 50%;/*все что ниже ставит текст по центру картинки*/
+    left: 0;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+
+    transition: opacity .2s linear;/*параметры перехода для прозрачности. появятся суптим на картинке*/
+}
+.statistics {
+    background-color: #95e1d3;
+}
+.stat {
+    display: flex;  
+}
+.stat_item {
+    flex: 1 1 0;/* одинаковые колонки*/
+    padding: 40px 25px;/*отступы (у блока 42) верхниз, правлев*/
+    border-left: 1px solid white; /*разделительные полоски*/
+
+    text-align: center;
+    color: white;
+
+    
+}
+
+.stat_item:last-child { /*правую разделительную полоску*/
+    border-right: 1 px solid white;
+}
+
+.stat_count {
+    margin-bottom: 5px;
+
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1; 
+}
+
+.stat_text {
+    font-size: 14;
+    text-transform: uppercase;
+}
+
+/*services*/
+.services {
+    display: flex;
+}
+.services_item {
+    flex: 1 1 0;
+    padding-left: 90px; /*отступ слева где иконка*/
+    padding-right: 5px;
+    position: relative;/*пишем чтобы потом вставить рядом иконку, а иконку делаем позишн абсолют*/
+}
+.services_icon {
+    position: absolute;/*иконка позишн абсолют относительно item*/
+    top: 3px;
+    left: 40px;/*подвинул иконку ближе к тексту от края*/
+    z-index: 1;
+}
+
+.services_title {
+    margin-bottom: 10px; /*отстут заголовка от текста*/
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.services_text {
+    font-size: 15px;
+    color: #333;   
+}
+.devices {/*размеры для блока с телефоном*/
+width: 100%;
+max-width: 500px;
+margin: 0 auto;
+position: relative;
+}
+.devises_item {
+    display: block;
+}
+.devises_item--iphone {
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    z-index: 1;
+}
+
+.wedo {
+    display: flex;
+
+}
+.wedo_item { /*делаем два блока по 50%*/
+    width: 50%; /*а можно былоflex:1 1 0.так делали вдругомместе см выше*/
+}
+
+.accordion_item {
+    margin-bottom: 10px;
+    border: 1px solid #e5e5e5;
+}
+
+.accordion_item.active
+.accordion_content {
+    display: block;
+}
+
+.accordion_item.active
+.accordion_heder {
+    border-bottom-color: #e5e5e5;
+}
+
+.accordion_item.active
+.accordion_heder::after {
+    transform: translateY(-50%) rotate(-45deg); /*делаем стрелку наверх*/
+}
+
+.accordion_heder {
+    padding: 15px 20px 15px 65px;/*отступы верх, право, низ, лево*/
+    position: relative;
+    border: 1px solid transparent;/*цвет бордера прозрачный а был серый*/
+
+    cursor: pointer;
+}
+.accordion_heder::after{/*делаем стрелку вниз. была наверх. делел сначала ее*/
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 1;
+
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.accordion_icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.accordion_content {
+    padding: 15px 20px;
+    display: none;/*чтобы срабатывал .accordion_item.active*/
+
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 300;
+    color:black;
+}
+.accordion_title {
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+}
+/*Reviews*/
+.reviews {
+    padding: 0 110px;
+    position: relative;/*для rev_btn. Там стоит position absolut*/
+}
+
+.reviews_item {
+    padding-left: 205px;
+    position: relative;/*связкадля rev_foto*/
+
+} 
+.reviews_foto {
+    position: absolute;/*связкадля rev_item*/
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    border: 2px solid #95e1d3;/*зеленый бордер для 145 плуйсхолдер*/
+}
+.reviews_text {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 300;
+    color: #999;
+    margin-bottom: 15px;
+}
+.reviews_author {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, cursive;
+    font-size: 24px;
+    color: #333;
+}
+.reviews_author::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 3px;
+    margin-right: 10px;
+
+    background-color: #f38181;
+}
+
+.reviews_btn {
+
+    position: absolute; /*Для rev Там стоит position relative*/
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+
+    font-size: 0;
+    color: transparent;
+
+}
+
+.reviews_btn::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    border-top: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+
+    
+   ;
+}
+.reviews_btn--prev {
+    left: 0;
+    transform:  rotate(-45deg)
+}
+
+.reviews_btn--next {
+    right: 0;
+    transform:  rotate(135deg)
+}

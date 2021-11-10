@@ -1,0 +1,50 @@
+body{
+    /*color: rgb(34, 37, 204);/* Цвет текста */
+    background-color: rgb(219, 210, 219);
+    background-image:url(images/im2.jpeg);
+    background-size: 100% 55%;
+    /*background-attachment: auto;*/
+    background-repeat: No-repeat;/*без повторения картинки*/
+    background-position: center top;
+    background-attachment: scroll;/*фон зафиксирован при прокрутке*/
+}
+.description {
+    color: #000;
+    /*margin-top: 50px;*/
+    text-align: center;
+    background-color: rgba(105, 45, 5, 0.767);
+}
+
+.box1 {
+    color: #000;
+    margin-top: 50px;
+    text-align: center;
+    /*background-color: rgb(220, 235, 225);*/
+    font-size: 20px;  
+}
+
+.text {
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+}
+
+
+.container {
+background: rgb(117, 115, 115);
+height: 100%;
+margin: 0;
+padding: 50px;
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+   
+
+a{
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
