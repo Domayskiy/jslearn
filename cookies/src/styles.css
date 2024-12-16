@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* подправил адрес папки на 5 ур */
+@font-face {
+    font-family: 'Steppe-Book';
+    src: url("./assets/fonts/Steppe-Book.ttf");
+}
+
+@font-face {
+    font-family: 'Steppe-ExtraBold';
+    src: url("./assets/fonts/Steppe-ExtraBold.ttf");
+}
+
+body {
+    background-color: #5243F4;
+    font-family: 'Steppe-Book', sans-serif;
+    color: white;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.button {
+    background-color: white;
+    border-radius: 60px;
+    width: 170px;
+    height: 58px;
+    box-sizing: border-box;
+    padding: 18px;
+    text-align: center;
+    font-size: 18px;
+    color: #5243F4;
+    border: 0;
+    /* убрал доп рамку */
+    outline: none;
+    cursor: pointer;
+}
+
+.violet-button {
+    background-color: #5243F4;
+    color: white;
+}
+
+/* добав на 5 ур ангулара  чтобы кнопка заказа была неактивна без заполненой формы */
+.button:disabled {
+    cursor: not-allowed;
+    color: gray;
+    background-color: #343434;
+}
+
+/* добавил еще :not(:disabled) на 5 ур */
+.button:hover:not(:disabled) { 
+    background-color: #eeeeee;
+}
+
+/* добавил еще :not(:disabled) на 5 ур */
+.button.violet-button:hover:not(:disabled) {
+    background-color: #3b2be9;
+}
+
+
+.common-title {
+    font-family: 'Steppe-ExtraBold', sans-serif;
+    font-size: 60px;
+    line-height: 100%;
+    text-align: center;
+}

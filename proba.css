@@ -1,0 +1,157 @@
+/*li:not(.elem){
+    color: red;
+}*/
+span {
+    display: block;
+    text-align: center;
+    padding: 30px;
+    
+    
+
+}
+p {
+    /*display: table-cell;*/
+    display: block;
+    margin-bottom: 10px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    padding: 10px;
+    border: 1px black solid;
+    width: 200px ;
+    /*height: 100px;*/
+    text-align: justify;
+    /*vertical-align: middle;*/
+
+
+}
+.parent {
+	width: 300px;
+	border: 1px solid red;
+    text-align: center;
+    margin-bottom: 30px; /* снизу */
+}
+
+.child {
+	height: 100px;
+	border: 1px solid green;
+	margin: 30px;
+    
+}
+
+ol {
+	list-style-type: lower-alpha;
+}
+
+.spis ul{
+    list-style-type: none;
+}
+
+li:not(:first-child, :last-child) {
+	color: red;
+}
+
+p {width: 300px; background-color:rgb(49, 197, 197); color: yellow; height: 300px; text-align: center;
+    border-width: 3px;    /* толщина 3px */
+	/*border-style: solid; /* в виде линии */
+	/*border-color: red;    /* красный цвет */
+    /*border-radius: 20px;}
+
+a {
+        /*width: 300px;
+        height: 100px;*/
+        /*border: 1px solid red;*/
+        /*border-radius: 10px;*/
+        /*text-decoration: none;
+        
+}
+.ggg {
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    /*background:rgb(198, 199, 199);*/
+    border-radius:50%;
+    background-image: url(https://www.mirsud.spb.ru/static/img/inner_logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+
+.aaa{
+    background-image: url('https://60.img.avito.st/avatar/social/256x256/3652294360.jpg'); 
+    background-position: center center;
+    background-size: 35%;
+    vertical-align: middle;
+    padding: 20px;
+}
+    
+.aaa{
+    width: 350px;
+    height: 350px;
+    border: 1px solid red;
+    text-align: center; 
+    
+    /*background-image: linear-gradient(to right, #E2BCBB, #E4514A);*/
+}
+
+a:hover {
+	text-decoration: underline; color: #000; background-color:rgb(224, 217, 23);
+}
+.ggg:hover {color: #000; background-color:rgb(192, 188, 188);
+
+}
+
+/*.aaa {
+    background-image: url("часы.jpg");
+    /*background: gray;}*/
+/*h1 {
+    color:rgb(255, 157, 0); text-align: center;
+}
+/*h2{
+    text-align: center; width: 300; font-style: italic;
+}
+td {
+	width: 500px;
+	height: 100px; text-align: center;
+}
+th {
+    text-align: left;
+}
+
+/*p {
+    font: bold italic 16px/50px Arial;
+    font-size: 16px;
+	font-family: Arial;
+	font-weight: bold;
+	line-height: 50px;
+	font-style: italic;
+	
+	text-indent: 50px;
+	text-align: justify;
+	width: 400px;
+}*/
+/*
+li > b {
+    color: red;
+}
+.fff p {
+    color:blue;
+}
+#elem ~ li {
+    color:red;
+}
+
+a:link {
+	color: red; text-decoration: none;
+}
+a:visited {
+	color: green;
+}
+a:hover {
+	text-decoration: underline; color: #000; background-color:rgb(224, 217, 23);
+}
+a:active {
+	color: blue;
+}*/

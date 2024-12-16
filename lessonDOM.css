@@ -1,0 +1,130 @@
+.color1 {
+	background: red;
+}
+.color2 {
+	background: green;
+}
+.color3 {
+	background: yellow;
+}
+
+.active {
+	background: red;
+}
+
+
+.decor{
+	text-decoration: line-through;
+	/*background-color: green;*/
+}
+
+.hidden {
+	display: none;
+}
+
+.letter { 
+	color: red; /* Красный цвет символов */ 
+	font-size: 150%; /* Размер шрифта в процентах */ 
+	font-family: serif; /* Шрифт с засечками */ 
+	position: relative; /* Относительное позиционирование */ 
+	top: 5px; /* Сдвиг сверху */ 
+}
+
+
+td {
+	width: 50px;
+	height: 50px;
+	border: 1px solid black;
+	text-align: center
+
+}
+
+#block:not(.active) {
+	display: none;
+}
+.colored2 {
+    color: red;
+    /*background-color: rgb(18, 228, 18);*/
+}
+.colored3 {
+    color: rgb(106, 47, 255);
+    /*background-color: red;*/
+}
+/*
+p {
+	width: 200px;
+	height: 200px;
+	border: 1px solid green;
+}
+
+/*
+div, ul, li {
+	padding: 20px;
+}
+div {
+	border: 1px solid red;
+}
+ul {
+	border: 1px solid orange;
+}
+li {
+	border: 1px solid green;
+}*/
+
+/*div {
+	padding: 20px;
+	border: 1px solid red;
+}
+*/
+
+
+/*
+.vsplt1 {
+    background-color: rgb(18, 228, 18);
+    width: 200px;
+	height: 200px;
+    border: 1px solid red;
+
+}
+.vsplt2 {
+    background-color: rgb(109, 149, 197);
+    width: 150px;
+	height: 150px;
+    margin: 23px;
+    border: 1px dashed black;
+	
+}
+.vsplt3 {
+    background-color: rgb(225, 59, 30);
+    width: 100px;
+	height: 100px;
+    margin: 23px;
+    border: 1px dashed black;
+    
+}
+/*
+.colored {
+	color: red;
+    border-color: green;
+    box-shadow: 10px 5px 5px orange;
+    margin-bottom: 20px;
+	border: 1px dashed black;
+    
+}
+
+.fatty {
+    font-weight: 900;
+    
+}
+.cross {
+    text-decoration: line-through;
+}
+ul {
+	padding: 30px;
+	border: 1px solid red;
+}
+li {
+	list-style-type: none;
+	margin-bottom: 20px;
+	border: 1px dashed black;
+}

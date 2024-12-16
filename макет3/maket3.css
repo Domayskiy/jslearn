@@ -1,0 +1,111 @@
+
+body,
+p,
+h1,
+h2,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #EBEBEB;
+	font-family: sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+/* .wrapper {
+    width: 890px;
+	margin: 0 auto;
+	display: flex;
+} */
+
+header {
+    background-color:#F8AA03;
+}
+nav a {
+	margin-right: 20px;
+	font-size: 18px;
+}
+#menu a:link,
+#menu a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#menu a:hover,
+#menu a.active {
+	text-decoration: underline;
+}
+
+#menu {
+	min-height: 50px;
+	align-items: center;
+	display: flex;
+	margin-left: 20px;
+}
+footer{
+	border: 1px solid black;
+	margin-top: 5px;
+	color: #ffffff;
+	display: flex;
+	min-height: 75px;
+	align-items: center;
+	justify-content: center;
+	background-color: #F8AA03;
+}
+.container{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.left{
+	width: 600px;
+	border: 1px solid black;
+
+}
+.right{
+	width: 100px;
+	border: 1px solid black;
+}
+.price td,
+.price th {
+	border: 1px solid #000000;
+	text-align: center;
+}
+
+.price th {
+	background-color: #EBEBEB;
+}
+main {
+	text-align: justify;
+	width: 530px;
+	background-color: #ffffff;
+	padding: 20px 10px 20px 20px;
+	box-sizing: border-box;
+}
+main h1 {
+	font-size: 21px;
+}
+main p {
+	margin: 10px 0;
+}
+aside {
+	background-color: #ffffff;
+	padding: 20px 20px 20px 10px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+    justify-content: space-between;
+	align-items: stretch
+
+}
+.price th {
+	background-color: #EBEBEB;
+}

@@ -1,0 +1,75 @@
+
+* {
+	box-sizing: border-box;
+}
+header {
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+.block {
+	margin: 20px 0 50px 220px;
+    border: 1px solid green;
+}
+nav {
+    display: flex;
+    width: 600px;
+    border-radius: 15px;
+    border: 1px solid rgb(159, 70, 119);
+    padding: 10px;
+    font: Times;
+    gap: 20px;
+}
+.sitename {
+	margin-bottom: 10px;
+	font: 20px Arial;
+}
+
+.container {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+    justify-content: space-between;
+}
+main {
+width: 700px;
+border: 1px solid rgb(159, 70, 119);
+padding: 20px
+}
+.left {
+    border: 1px solid rgb(74, 70, 159);
+    width: 200px;
+    padding: 20px;
+    margin-right: 20px;
+}
+.right{
+    border: 1px solid rgb(117, 144, 22);
+    width: 200px;
+    padding: 20px;
+    margin-left: 20px;
+}
+footer{
+    border: 1px solid rgb(30, 213, 198);
+    padding: 30px 0;
+    text-align: center;
+	font: 30px Arial;
+    margin-top: 5px;
+
+}
+nav a {
+	padding: 10px;
+	color: blue;
+	text-decoration: none;
+	font: 15px Arial;
+}
+nav a:hover, nav a.active {
+	color: red;
+	text-decoration: underline;
+}
+main h1 {
+	font: 20px "Times New Roman";
+}
+main p {
+	margin: 10px 0;
+	text-align: justify;
+	font: 15px Arial;
+}
